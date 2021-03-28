@@ -5,11 +5,9 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 @RestController
-public class TestController 
-{
+public class TestController {
 	@GetMapping("/home")
-	public ModelAndView getHomePage()
-	{
+	public ModelAndView getHomePage(){
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName("home");
 		return mav;
